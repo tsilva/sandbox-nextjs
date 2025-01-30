@@ -6,7 +6,7 @@ type ApiResponse = {
 
 export default async function TestPage({ params }: { params: Promise<{ id: string }> }) {
   const {id} = await params;
-  const response = await fetch(`http://localhost:3000/api/hello/${id}`);
+  const response = await fetch(`/api/hello/${id}`);
   const data: ApiResponse = await response.json();
 
   return (
