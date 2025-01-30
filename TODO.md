@@ -1,4 +1,2 @@
-- [ ] Fix API call bug
-- [ ] Add shadcdn
 - [ ] Add AI integration
 - [ ] Add unit testing
