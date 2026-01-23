@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="sandbox-nextjs" width="256"/>
+  <img src="logo.png" alt="sandbox-nextjs" width="512"/>
 
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
   [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
