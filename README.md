@@ -1,6 +1,8 @@
 <div align="center">
   <img src="logo.png" alt="sandbox-nextjs" width="512"/>
 
+  # sandbox-nextjs
+
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
   [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
