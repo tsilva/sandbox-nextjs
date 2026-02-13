@@ -9,7 +9,7 @@
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-  **🧪 A playground for experimenting with Next.js 15, React 19, and modern web technologies**
+  **⚛️ Next.js 15 sandbox with App Router, React 19, and shadcn/ui 🎨**
 
   [Demo Routes](#available-routes) · [Quick Start](#quick-start) · [Stack](#tech-stack)
 </div>
