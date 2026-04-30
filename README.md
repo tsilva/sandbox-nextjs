@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="sandbox-nextjs" width="512"/>
+  <img src="https://raw.githubusercontent.com/tsilva/sandbox-nextjs/main/logo.png" alt="sandbox-nextjs" width="512"/>
 
   # sandbox-nextjs
 
