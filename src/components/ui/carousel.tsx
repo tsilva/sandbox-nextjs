@@ -111,6 +111,9 @@ const Carousel = React.forwardRef<
         return
       }
 
+      // Embla exposes its initial navigation state only after the API instance
+      // is created, so this one synchronization is intentionally effect-driven.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       onSelect(api)
       api.on("reInit", onSelect)
       api.on("select", onSelect)
