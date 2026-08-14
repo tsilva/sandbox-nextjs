@@ -1,0 +1,42 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      next-framework:
+        patterns:
+          - next
+          - eslint-config-next
+          - "@next/*"
+      npm-runtime:
+        dependency-type: production
+        update-types:
+          - minor
+          - patch
+        exclude-patterns:
+          - next
+          - "@next/*"
+      npm-development:
+        dependency-type: development
+        update-types:
+          - minor
+          - patch
+        exclude-patterns:
+          - eslint-config-next
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch

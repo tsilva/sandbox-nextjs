@@ -9,18 +9,18 @@
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-  **⚛️ Next.js 15 sandbox with App Router, React 19, and shadcn/ui 🎨**
+  **⚛️ Next.js 16 sandbox with App Router, React 19, and shadcn/ui 🎨**
 
   [Demo Routes](#available-routes) · [Quick Start](#quick-start) · [Stack](#tech-stack)
 </div>
 
 ## Overview
 
-sandbox-nextjs is a minimal experimental project for testing Next.js 15 App Router features, React 19 capabilities, and shadcn/ui components. Use it as a starting point for prototyping or learning the latest React ecosystem.
+sandbox-nextjs is a minimal experimental project for testing Next.js 16 App Router features, React 19 capabilities, and shadcn/ui components. Use it as a starting point for prototyping or learning the latest React ecosystem.
 
 ## Features
 
-- **Next.js 15 App Router** - Server Components, dynamic routes, and API routes
+- **Next.js 16 App Router** - Server Components, dynamic routes, and API routes
 - **React 19** - Latest React features and improvements
 - **shadcn/ui Components** - Pre-built accessible components (Accordion, Button, Card, Carousel)
 - **Tailwind CSS** - Utility-first styling with animations
@@ -30,11 +30,11 @@ sandbox-nextjs is a minimal experimental project for testing Next.js 15 App Rout
 ## Quick Start
 
 ```bash
-npm install
-npm run dev
+pnpm install --frozen-lockfile
+pnpm dev --port auto
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the app.
+Open the random local URL printed by the development server.
 
 ## Available Routes
 
@@ -49,7 +49,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the app.
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
-| Next.js | 15.1.6 | React framework with App Router |
+| Next.js | 16.2.12 | React framework with App Router |
 | React | 19.0.0 | UI library |
 | TypeScript | 5.x | Type safety |
 | Tailwind CSS | 3.4.1 | Styling |
@@ -77,10 +77,10 @@ sandbox-nextjs/
 
 | Command | Description |
 |---------|-------------|
-| `npm run dev` | Start dev server with Turbopack |
-| `npm run build` | Build for production |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
+| `pnpm dev --port auto` | Start the dev server on a random available port |
+| `pnpm build` | Build for production |
+| `pnpm start --port auto` | Start the production server on a random available port |
+| `pnpm lint` | Run ESLint |
 
 ## License
 
