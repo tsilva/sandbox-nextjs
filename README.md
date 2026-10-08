@@ -1,18 +1,18 @@
-<div align="center">
+<p align="center">
   <img src="https://raw.githubusercontent.com/tsilva/sandbox-nextjs/main/logo.png" alt="sandbox-nextjs" width="512"/>
+  <br />
+  <!-- repo-tagline:start -->
+  <strong>⚛️ Next.js 16 sandbox with App Router, React 19, and shadcn/ui 🎨</strong>
+  <!-- repo-tagline:end -->
+</p>
 
-  # sandbox-nextjs
-
-  [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
   [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
   [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-  **⚛️ Next.js 16 sandbox with App Router, React 19, and shadcn/ui 🎨**
-
   [Demo Routes](#available-routes) · [Quick Start](#quick-start) · [Stack](#tech-stack)
-</div>
 
 ## Overview
 
