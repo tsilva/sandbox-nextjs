@@ -85,3 +85,9 @@ sandbox-nextjs/
 ## License
 
 MIT
+
+Dependency maintenance keeps Next.js and its lint configuration aligned, pins patched transitive versions, and substitutes the Next lint directory glob with the registry-hosted tinyglobby implementation. Tailwind 4 uses its separate PostCSS plugin and explicitly loads the existing theme and animation configuration, removing the unpatched Tailwind 3 glob dependency graph. The seven-day release hold and disabled dependency lifecycle scripts remain enabled. Run `pnpm test` for dependency, lint-root, and generated-style regression checks.
+
+Tailwind 4 targets Safari 16.4+, Chrome 111+, and Firefox 128+. Utility renames preserve card shadows and accessible focus outlines; custom colors, dark mode, and accordion animations retain the existing configuration.
+
+Vercel’s source analyzers use a consistent ts-morph 28 to avoid its legacy fast-glob/braces dependency path; deployment commands retain the existing Vercel CLI version.

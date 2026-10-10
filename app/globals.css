@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -68,5 +67,15 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Preserve the v3 interactive-control defaults during the v4 migration. */
+@layer base {
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  input::placeholder, textarea::placeholder {
+    color: var(--color-gray-400);
   }
 }
