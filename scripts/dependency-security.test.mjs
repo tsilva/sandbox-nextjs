@@ -57,28 +57,6 @@ test("Tailwind PostCSS still expands content classes and variants", async () => 
   assert.match(output.css, /display: flex/);
 });
 
-test("Vercel backend configuration extraction retains literals and nested values", () => {
-  const directory = mkdtempSync(join(tmpdir(), "vercel-config-"));
-  const require = createRequire(import.meta.url);
-  const vercelRequire = createRequire(require.resolve("vercel/package.json"));
-  const backendRequire = createRequire(vercelRequire.resolve("@vercel/backends/package.json"));
-  const { Project } = backendRequire("ts-morph");
-  const { getConfig } = backendRequire("@vercel/static-config");
-  try {
-    const source = join(directory, "entry.ts");
-    writeFileSync(source, 'export const config = { runtime: "edge", maxDuration: 30, regions: ["iad1", "sfo1"] };');
-    assert.deepEqual(getConfig(new Project(), source), { runtime: "edge", maxDuration: 30, regions: ["iad1", "sfo1"] });
-    const absent = join(directory, "unconfigured.ts");
-    writeFileSync(absent, 'export default function handler() {}');
-    assert.equal(getConfig(new Project(), absent), null);
-    const project = new Project();
-    const discovered = project.addSourceFilesAtPaths(join(directory, "*.{ts,tsx}"));
-    assert.deepEqual(discovered.map(file => file.getBaseName()).sort(), ["entry.ts", "unconfigured.ts"]);
-  } finally {
-    rmSync(directory, { recursive: true, force: true });
-  }
-});
-
 test("the complete dependency graph has no known vulnerabilities", () => {
   const audit = JSON.parse(execFileSync("pnpm", ["audit", "--json"], { encoding: "utf8", maxBuffer: 8 * 1024 * 1024 }));
   assert.deepEqual(audit.metadata.vulnerabilities, { info: 0, low: 0, moderate: 0, high: 0, critical: 0 });

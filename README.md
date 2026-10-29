@@ -90,4 +90,4 @@ Dependency maintenance keeps Next.js and its lint configuration aligned, pins pa
 
 Tailwind 4 targets Safari 16.4+, Chrome 111+, and Firefox 128+. Utility renames preserve card shadows and accessible focus outlines; custom colors, dark mode, and accordion animations retain the existing configuration.
 
-Vercel’s source analyzers use a consistent ts-morph 28 to avoid its legacy fast-glob/braces dependency path; deployment commands retain the existing Vercel CLI version.
+The project does not bundle the Vercel deployment CLI. Its application and CI commands use Next.js directly; `@vercel/speed-insights` remains available in the application.
