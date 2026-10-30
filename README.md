@@ -84,7 +84,7 @@ sandbox-nextjs/
 
 ## License
 
-MIT
+[MIT License](LICENSE).
 
 Dependency maintenance keeps Next.js and its lint configuration aligned, pins patched transitive versions, and substitutes the Next lint directory glob with the registry-hosted tinyglobby implementation. Tailwind 4 uses its separate PostCSS plugin and explicitly loads the existing theme and animation configuration, removing the unpatched Tailwind 3 glob dependency graph. The seven-day release hold and disabled dependency lifecycle scripts remain enabled. Run `pnpm test` for dependency, lint-root, and generated-style regression checks.
 
