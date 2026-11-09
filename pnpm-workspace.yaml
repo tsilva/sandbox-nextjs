@@ -1,2 +1,5 @@
 minimumReleaseAge: 10080
 blockExoticSubdeps: true
+
+patchedDependencies:
+  minimatch@11.0.1: patches/minimatch@11.0.1.patch
